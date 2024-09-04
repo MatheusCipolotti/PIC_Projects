@@ -1,0 +1,21 @@
+import serial
+from datetime import datetime
+import time
+
+# Configura a porta serial (substitua 'COM3' pelo nome da porta que você está usando)
+ser = serial.Serial('COM6', 9600)  # Porta e velocidade (baudrate)
+
+# Obter a data e hora atual
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+
+# Acessa o canal do microcontrolador responsável pelo recebimento das horas
+ser.write(b'T')
+
+# Enviar cada caractere separadamente
+for char in current_time:
+    ser.write(char.encode())  # Enviar o caractere como byte
+    time.sleep(0.1)  # Pequeno atraso entre envios (opcional)
+
+# Fechar a porta serial
+ser.close()
