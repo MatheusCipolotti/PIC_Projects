@@ -29,6 +29,6 @@ Bits 1 and 0: Rate Select (RS[1:0]) - Esses bits controlam a frequência de osci
 ## Circuito de Testes
 O circuito utilizado para os testes possui o PIC16F877A com o cristal oscilador de 20MHz com o PDF disponibilizado no link abaixo:
 
-- [Circuito](RTC_DS1307/Circuito/)
+- [Circuito](Circuito/Circuito.pdf)
 
 ## Resultados
