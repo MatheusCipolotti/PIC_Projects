@@ -1,4 +1,4 @@
-# [PIC] Controle para potenciômetro digital DS1267 via SPI
+# Controle para potenciômetro digital DS1267 via SPI
 ## Objetivo
 Desenvolver a estrutura de código para o controle do potenciômetro digital DS1267 utilizando o microcontrolador PIC16F877A.
 ## Diagrama de tempo DS1267
