@@ -4,4 +4,4 @@ Repositório dedicado ao armazenamento de projetos e exemplos de código utiliza
 # Índice:
 
 ## 16F877A:
-- [Potenciômetro Digital DS1267](PIC_Projects/POT_DIG_DS1267/) 
+- [Potenciômetro Digital DS1267](POT_DIG_DS1267) 
