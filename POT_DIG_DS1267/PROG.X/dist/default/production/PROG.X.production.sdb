@@ -1,0 +1,120 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\DS1267.c
+[v _ds1267_set_pot ds1267_set_pot `(v  1 e 1 0 ]
+"16 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"8 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\SPI.c
+[v _spi_send spi_send `(v  1 e 1 0 ]
+"14
+[v _spi_cs_status spi_cs_status `(v  1 e 1 0 ]
+"279 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S148 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"296
+[u S157 . 1 `S148 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES157  1 e 1 @7 ]
+"809
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"816
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1438
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1831
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S59 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1885
+[s S68 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S73 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S79 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S84 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S89 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S94 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S99 . 1 `S59 1 . 1 0 `S68 1 . 1 0 `S73 1 . 1 0 `S79 1 . 1 0 `S84 1 . 1 0 `S89 1 . 1 0 `S94 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES99  1 e 1 @148 ]
+"2088
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"14 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\main.c
+[v _valor valor `uc  1 e 1 0 ]
+"16
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+} 0
+"5 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\DS1267.c
+[v _ds1267_set_pot ds1267_set_pot `(v  1 e 1 0 ]
+{
+[v ds1267_set_pot@data1 data1 `uc  1 a 1 wreg ]
+[v ds1267_set_pot@data1 data1 `uc  1 a 1 wreg ]
+[v ds1267_set_pot@data2 data2 `uc  1 p 1 1 ]
+[v ds1267_set_pot@data1 data1 `uc  1 a 1 2 ]
+"11
+} 0
+"8 D:\curso\Microcontrolador\PIC\CIPOLOTTI\POT_DIG_DS1267\PROG.X\SPI.c
+[v _spi_send spi_send `(v  1 e 1 0 ]
+{
+[v spi_send@data data `uc  1 a 1 wreg ]
+[v spi_send@data data `uc  1 a 1 wreg ]
+[v spi_send@data data `uc  1 a 1 0 ]
+"11
+} 0
+"14
+[v _spi_cs_status spi_cs_status `(v  1 e 1 0 ]
+{
+[v spi_cs_status@status status `uc  1 a 1 wreg ]
+[v spi_cs_status@status status `uc  1 a 1 wreg ]
+[v spi_cs_status@status status `uc  1 a 1 0 ]
+"16
+} 0
