@@ -1,6 +1,14 @@
 # Controle para o RTC DS1307 via I2C
+
 ## Objetivo
 Desenvolver a estrutura de código para o controle do RTC DS1307 utilizando o microcontrolador PIC16F877A.
+
+## Setup de Desenvolvimento
+  - MPLAX: V6.05
+  - XC8: V2.46
+  - Kicad 8.0
+  - PuTTY
+
 ## Registradores e Funções do DS1307
 As informações de tempo e calendário no DS1307 são obtidas lendo os bytes dos registros apropriados. Esses registros estão em formato BCD. O dia da semana é incrementado à meia-noite e é definido pelo usuário, devendo ser sequencial (por exemplo, 1 para domingo, 2 para segunda-feira, etc.). Valores incorretos de data e hora causam operação indefinida. O bit 7 do registro 0 é o bit de parada do relógio (CH). Quando definido como 1, o oscilador é desativado; quando 0, é ativado. Inicialmente, os registros de data e hora são resetados para 01/01/00 01 00:00:00. O DS1307 pode operar em modos de 12 ou 24 horas, controlado pelo bit 6 do registro de horas. O modo de 12 horas usa o bit 5 para indicar AM/PM, enquanto no modo de 24 horas, o bit 5 indica horas de 20 a 23. Os registros de tempo e data utilizam buffers secundários para evitar erros durante leituras ou atualizações, e ao escrever no registro de segundos, o divisor é resetado.
 <p align="center" width="100%">
@@ -31,4 +39,13 @@ O circuito utilizado para os testes possui o PIC16F877A com o cristal oscilador 
 
 - [Circuito](Circuito/Circuito.pdf)
 
+## Funcionamento do Software
+
 ## Resultados
+Utilizando o programa PuTTY e enviando via Serial o caractere 'H', foi comparado o valor configurado anteriormente com o site https://www.horariodebrasilia.org/ conforme a imagem abaixo:
+<p align="center" width="100%">
+<img width="100%" src="https://github.com/user-attachments/assets/98a24090-2384-45bb-a4f6-5316b11409a1">
+</p>
+<p align="center" width="100%">
+  Figura 3 - Teste de comparação  
+</p>
