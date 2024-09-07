@@ -9,5 +9,26 @@ As informações de tempo e calendário no DS1307 são obtidas lendo os bytes do
 <p align="center" width="100%">
   Figura 1 - Registradores do DS1307 
 </p>
+O registrador de controle do DS1307 é usado para controlar a operação do pino SQW/OUT.
+<p align="center" width="100%">
+<img width="100%" src="https://github.com/user-attachments/assets/92a249dc-f4c6-4f6e-813d-b77bfd634259">
+</p>
+<p align="center" width="100%">
+  Figura 2 - Registrador de controle 
+</p>
+
+Bit 7: Output Control (OUT) - Este bit controla o nível de saída do pino SQW/OUT, se SQWE = 0, o nível lógico no pino SQW/OUT é 1 se OUT = 1 e é 0 se OUT = 0.
+
+Bit 4: Square-Wave Enable (SQWE) - Este bit, quando definido como lógico 1, habilita a saída do oscilador, a frequência da saída depende do valor dos bits RS0 e RS1.
+
+Bits 1 and 0: Rate Select (RS[1:0]) - Esses bits controlam a frequência de oscilação no pino 7 SQW/OUT, conforme a imagem abaixo:
+<p align="center" width="100%">
+<img width="100%" src="https://github.com/user-attachments/assets/3b563aee-c933-485c-8f5d-caf89f36c3d5">
+</p>
+
 ## Circuito de Testes
+O circuito utilizado para os testes possui o PIC16F877A com o cristal oscilador de 20MHz com o PDF disponibilizado no link abaixo:
+
+- [Circuito](RTC_DS1307/Circuito/Circuito.pdf)
+
 ## Resultados
