@@ -3,7 +3,7 @@
 Desenvolver a estrutura de código para o controle do potenciômetro digital DS1267 utilizando o microcontrolador PIC16F877A.
 ## Diagrama de tempo DS1267
 <p align="center" width="100%">
-<img width="100%" src="https://github.com/MatheusCipolotti/-PIC-POT_DIG_DS1267/assets/102692462/5182ed6c-35cd-4732-8365-de2a58970a79">
+<img width="100%" src="https://github.com/user-attachments/assets/f6aa927a-51e8-4273-87b8-97cf1eaf5056">
 </p>
 <p align="center" width="100%">
   Figura 1 - Diagrama de tempo DS1267 
